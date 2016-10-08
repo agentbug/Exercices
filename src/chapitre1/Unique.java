@@ -28,6 +28,8 @@ public class Unique {
 		System.out.println(isUniqueChar("test"));
 		
 		System.out.println(isUniqueChar("dsiuvcnh"));
+		
+		System.out.println(isUniqueChar("dsiuvcnh"));
 	}
 
 }
