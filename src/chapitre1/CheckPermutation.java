@@ -13,9 +13,17 @@ public class CheckPermutation {
 	 * @return
 	 */
 	static boolean  isPermutation(String a, String b){
-		assert a == null || b == null :" a or b cant be null";
+		assert a != null || b != null :" a or b cant be null";
 
-		return a.chars().sorted().boxed().collect(Collectors.toList()).equals(b.chars().sorted().boxed().collect(Collectors.toList()));
+		return a.chars()
+				.sorted()
+				.boxed()
+				.collect(Collectors.toList())
+				.equals(b.chars()
+						.sorted()
+						.boxed()
+						.collect(Collectors.toList())
+						);
 	}
 	
 	
@@ -25,6 +33,8 @@ public class CheckPermutation {
 		System.out.println(isPermutation("abcc","cba"));
 		
 		System.out.println(isPermutation("abc","cba"));
+		
+		System.out.println(isPermutation(null, null));
 	}
 
 }
